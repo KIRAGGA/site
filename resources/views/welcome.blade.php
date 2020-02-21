@@ -1,7 +1,10 @@
 @extends('layout')
 
+@section('title')
+    Home
+@endsection
 
 @section('content')
-<p> This it my website</p>
+<p> This it my home page</p>
 
 @endsection
