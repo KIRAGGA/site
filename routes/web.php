@@ -18,7 +18,8 @@ Route::get('/', function () {
             'Go to the Market'
     ];
     return view('welcome', [
-        'tasks' => $tasks
+        'tasks' => $tasks,
+        'foo' => 'foobar'
         ]);
 });
 

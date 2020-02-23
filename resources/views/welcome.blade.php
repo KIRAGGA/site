@@ -4,7 +4,7 @@
  
 
 @section('content')
-<p> This is my home page</p>
+<p> This is {!!$foo!!} home page</p>
 <ul>
     @foreach ($tasks as $task)
      <li>{{$task}}</li>
