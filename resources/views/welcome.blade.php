@@ -4,6 +4,10 @@
  
 
 @section('content')
-<p> This it my home page</p>
-
+<p> This is my home page</p>
+<ul>
+    <?php foreach ($tasks as $task) : ?>
+     <li><? $task; ?></li>
+    <?php endforeach?>
+</ul>
 @endsection
