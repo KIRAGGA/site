@@ -12,7 +12,7 @@
 */
 
 
-Rout::get('/', 'PagesController@home');
-Rout::get('/about', 'PagesController@about');
-Rout::get('/contact', 'PagesController@contact');
+Route::get('/', 'PagesController@home');
+Route::get('/about', 'PagesController@about');
+Route::get('/contact', 'PagesController@contact');
 
