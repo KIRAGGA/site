@@ -6,5 +6,16 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    //
+    public function home(){
+        return view('welcome', [
+            'tasks' => $tasks,
+            'foo' => 'foobar'
+            ]);
+    }
+    public function about(){
+        return view('about');
+    }
+    public function contact(){
+        return view('contact');
+    }
 }
