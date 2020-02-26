@@ -8,7 +8,7 @@ class PagesController extends Controller
 {
     public function home(){
         return view('welcome', [
-            'foo' => 'bar'
+            'foo' => 'Home'
             ]);
     }
     public function about(){
