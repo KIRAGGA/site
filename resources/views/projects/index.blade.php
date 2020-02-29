@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>projects</h1>
+    <h1>Projects</h1>
 
-    {{-- @foreach ($projects as $project)
-<li>{{ $projects->title}}</li>
-    @endforeach --}}
+    {{-- <ul>
+        @foreach ($project as $project)
+        
+            <li>
+            <a href="/projects/{{$project->id}}">
+                {{$project->title}}
+            </a>
+                
+            </li>
+        @endforeach
+    </ul> --}}
 </body>
 </html>
