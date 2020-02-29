@@ -11,7 +11,7 @@ class ProjectsController extends Controller
     public function index(){
 
         $project = project::all();
-        
+
         return view('projects.index', compact('project'));
     }
 
@@ -48,12 +48,15 @@ class ProjectsController extends Controller
         return redirect('/projects');
     }
     
-
     public function store(){
-        request()->validate([
-            'title' => ['required','min:3'],
-            'description' => ['required','min:3']]);
-        Project::create(request(['title','description']));
-        return redirect('/projects');
+        
+        return request()->all();
     }
+    // public function store(){
+    //     request()->validate([
+    //         'title' => ['required','min:3'],
+    //         'description' => ['required','min:3']]);
+    //     Project::create(request(['title','description']));
+    //     return redirect('/projects');
+    // }
 }
