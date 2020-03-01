@@ -10,7 +10,7 @@
     <h1>Create project</h1>
 
     <form method="POST" action="/projects">
-        @csrf
+         {{ csrf_field() }}
         <div>
             <input type="text" name="title" placeholder="Project title">
         </div>
