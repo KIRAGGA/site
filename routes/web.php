@@ -18,11 +18,11 @@ Route::get('/contact', 'PagesController@contact');
 
 Route:resourse('projects', 'ProjectsController');
 
-Route::get('/projects', 'ProjectsController@index');
-Route::post('/projects', 'ProjectsController@store');
-Route::get('/projects/create', 'ProjectsController@create');
-Route::get('/projects/{project}', 'ProjectsController@show');
-Route::post('/projects', 'ProjectsController@store');
-Route::post('/projects/{project}/edit', 'ProjectsController@edit');
-Route::patch('/projects/{project}', 'ProjectsController@update');
-Route::delete('/projects/{project}', 'ProjectsController@destory');
+// Route::get('/projects', 'ProjectsController@index');
+// Route::post('/projects', 'ProjectsController@store');
+// Route::get('/projects/create', 'ProjectsController@create');
+// Route::get('/projects/{project}', 'ProjectsController@show');
+// Route::post('/projects', 'ProjectsController@store');
+// Route::post('/projects/{project}/edit', 'ProjectsController@edit');
+// Route::patch('/projects/{project}', 'ProjectsController@update');
+// Route::delete('/projects/{project}', 'ProjectsController@destory');
