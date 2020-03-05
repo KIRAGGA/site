@@ -9,7 +9,7 @@
 <body>
     <h1>Projects</h1>
 
-    {{-- <ul>
+    <ul>
         @foreach ($project as $project)
         
             <li>
@@ -19,6 +19,6 @@
                 
             </li>
         @endforeach
-    </ul> --}}
+    </ul>
 </body>
 </html>
