@@ -16,7 +16,7 @@ Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
 
-Route:get('/project');
+Route:resourse('projects', 'ProjectsController');
 
 Route::get('/projects', 'ProjectsController@index');
 Route::post('/projects', 'ProjectsController@store');
