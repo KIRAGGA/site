@@ -23,6 +23,10 @@
         <div class="field">
             <div class="control">
                 <button type="submit" class="button is-link">Update Project</button>
+                
+            </div>
+            <div class="control">
+                <button type="submit">Delete</button>
             </div>
         </div>
     </form>
