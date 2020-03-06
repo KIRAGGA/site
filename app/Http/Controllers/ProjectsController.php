@@ -36,9 +36,9 @@ class ProjectsController extends Controller
     }
     
 
-    public function update(project $project){
-        
-        return redirect('/projects');
+    public function update(){
+        dd(request()->all());
+        // return redirect('/projects');
     }
     
 
