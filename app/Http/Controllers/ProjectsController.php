@@ -36,9 +36,14 @@ class ProjectsController extends Controller
     }
     
 
-    public function update(){
-        dd(request()->all());
-        // return redirect('/projects');
+    public function update($id){
+        // dd(request()->all());
+        $project = Project::findOrFail($id);
+        $project->title = request('title');
+        $project->description = request('title');
+
+        $project->Save();
+        return redirect('/projects');
     }
     
 
