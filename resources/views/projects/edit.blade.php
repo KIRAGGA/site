@@ -28,10 +28,12 @@
            
         </div>
     </form>
-    <form action="" method="post">
+<form action="/projects/{{$project->id}}" method="post">
+    {{method_field('DELETE')}}
+    {{ csrf_field() }}
         <div class="field">
             <div class="control">
-                <button type="submit" class="button is-link">Delete</button>
+                <button type="submit" class="button is-link">Delete project</button>
                 
             </div>
            
