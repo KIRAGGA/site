@@ -25,9 +25,16 @@
                 <button type="submit" class="button is-link">Update Project</button>
                 
             </div>
+           
+        </div>
+    </form>
+    <form action="" method="post">
+        <div class="field">
             <div class="control">
-                <button type="submit">Delete</button>
+                <button type="submit" class="button is-link">Delete</button>
+                
             </div>
+           
         </div>
     </form>
 @endsection
