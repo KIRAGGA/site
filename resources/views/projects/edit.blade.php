@@ -11,5 +11,12 @@
                 <input type="text" class="input" name="title" placeholder="Title">
             </div>
         </div>
+        <div class="field">
+            <label for="" class="label">Description</label>
+            <div class="control">
+                <textarea name="description" class="textarea"></textarea>
+            </div>
+        </div>
+        
     </form>
 @endsection
