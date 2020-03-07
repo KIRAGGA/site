@@ -20,6 +20,16 @@
         <div>
             <button type="submit">Create Project</button>
         </div>
+
+        @if ($errrors->any())
+            <div>
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        
+                    @endforeach
+                </ul>
+            </div>
+        @endif
     </form>
 </body>
 </html>
