@@ -49,7 +49,7 @@ class ProjectsController extends Controller
 
     public function destroy(Project $project){
         // $project->delete();
-        // $project = Project::findOrFail($id)->delete();
+        $project->delete();
         return redirect('/projects');
     }
     
