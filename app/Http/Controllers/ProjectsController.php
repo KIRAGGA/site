@@ -30,8 +30,8 @@ class ProjectsController extends Controller
     }
 
 
-    public function edit($id){
-        $project = Project::findOrFail($id);
+    public function edit(Project $project){
+        // $project = Project::findOrFail($id);
         return view('projects.edit', compact('project'));
     }
     
