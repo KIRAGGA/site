@@ -21,10 +21,10 @@ class ProjectsController extends Controller
     }
 
 
-    public function show(project $project){
+    public function show($id){
 
-        $twitter = app('twitter');
-        dd($twitter);
+        // $twitter = app('twitter');
+        // dd($twitter);
         
         return view('projects.show', compact('project'));
     }
