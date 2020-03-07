@@ -56,7 +56,8 @@ class ProjectsController extends Controller
     public function store(){
         
         $project::create([
-            
+            'title' => request('title'),
+            'description' => request('description')
         ]);
         return redirect('/projects');
     }
