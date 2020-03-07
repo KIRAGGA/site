@@ -36,9 +36,9 @@ class ProjectsController extends Controller
     }
     
 
-    public function update($id){
+    public function update(Project $project){
         // dd(request()->all());
-        $project = Project::findOrFail($id);
+        // $project = Project::findOrFail($id);
         $project->title = request('title');
         $project->description = request('title');
 
