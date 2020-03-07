@@ -21,8 +21,8 @@ class ProjectsController extends Controller
     }
 
 
-    public function show($id){
-        $project = Project::findOrFail($id);
+    public function show(Project $project){
+        // $project = Project::findOrFail($id);
         // $twitter = app('twitter');
         // dd($twitter);
         
