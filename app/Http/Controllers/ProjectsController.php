@@ -51,7 +51,7 @@ class ProjectsController extends Controller
     }
     
     public function store(){
-       $attributes = request()->validate
+        $attributes = request()->validate
         ([
             'title' => ['required','min:3','max:255'],
             'description' => ['required','min:3','max:255']
@@ -60,3 +60,5 @@ class ProjectsController extends Controller
 
         return redirect('/projects');
     }
+    
+}
