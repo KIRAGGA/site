@@ -12,7 +12,7 @@
     <form method="POST" action="/projects">
          {{ csrf_field() }}
         <div>
-        <input type="text" name="title" placeholder="Project title" required value="{{old('title')}}">
+        <input type="text" name="title" placeholder="Project title" required>
         </div>
         <div>
             <input type="text" name="description" placeholder="Project description" required>
@@ -21,7 +21,7 @@
             <button type="submit">Create Project</button>
         </div>
 
-        @if ($errrors->any())
+        @if ($errors->any())
             <div>
                 <ul>
                     @foreach ($errors->all() as $error)
