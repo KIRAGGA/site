@@ -2,7 +2,12 @@
 
 @section('content')
 <h1>{{$project->title}}</h1>
-<p>{{$project->description}}</p>
+<div>
+    {{$project->description}}
+    <p>
+        <a href="/projects/{{$project->id}}/edit">edit</a>
+    </p>
+</div>
 
 
 @if ($project->tasks->count())
@@ -14,7 +19,4 @@
     </div>
 @endif
 
-<p>
-    <a href="/projects/{{$project->id}}/edit">edit</a>
-</p>
 @endsection
