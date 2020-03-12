@@ -5,7 +5,8 @@
 <p>{{$project->description}}</p>
 
 <div>
-    @foreach ($project->tasks as $tasks)
+    @foreach ($project->tasks as $task)
+<li>{{$task->description}}</li>
         
     @endforeach
 </div>
