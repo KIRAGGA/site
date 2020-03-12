@@ -14,7 +14,7 @@
     <div>
         @foreach ($project->tasks as $task)
             <div>
-                <form method="POST">
+            <form method="POST" action="/tasks/{{ $task->id}}">
                     @method('PATCH')
                     <label for="completed" class="checkbox">
                         <input type="checkbox" name="completed">
