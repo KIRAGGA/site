@@ -31,7 +31,9 @@
 
 
 {{-- add a new task force --}}
-<form action="/project/{{ $project->id}}/tasks" method="post" class="box">
+<form action="/projects/{{ $project->id}}/tasks" method="post" class="box">
+    @csrf
+    
     <div>
         <label for="description">New  Task</label>
 
