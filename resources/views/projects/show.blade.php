@@ -29,7 +29,7 @@
     </div>
 @endif
 
-<form action="" method="post" class="box">
+<form action="/project/{{ $project->id}}/tasks" method="post" class="box">
     <div>
         <label for="description">New  Task</label>
 
@@ -37,7 +37,7 @@
             <input type="text" class="input" name="description" placeholder="New Task">
         </div>
     </div>
-    
+
     <div class="field">
         <div class="control">
             <button type="submit" class="button is-link">Add Task</button>
