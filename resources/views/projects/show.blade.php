@@ -15,7 +15,7 @@
         @foreach ($project->tasks as $task)
             <div class="box">
 
-                
+
             <form method="POST" action="/tasks/{{ $task->id}}" >
                     @method('PATCH')
                     @csrf
@@ -37,7 +37,7 @@
     @csrf
 
     <div>
-        <label for="description">New  Task</label>
+        <label for="description">New Task</label>
 
         <div>
             <input type="text" class="input" name="description" placeholder="New Task">
