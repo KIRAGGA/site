@@ -17,7 +17,7 @@
             <form method="POST" action="/tasks/{{ $task->id}}">
                     @method('PATCH')
                     <label for="completed" class="checkbox">
-                        <input type="checkbox" name="completed">
+                        <input type="checkbox" name="completed" onchange="this.form.submit()">
                         {{$task->description}}
                     </label>
                  </form>
