@@ -11,5 +11,6 @@ class ProjectTasksController extends Controller
         $task->update([
             'completed' => request()->has('completed')
         ]);
+        return back();
     }
 }
