@@ -29,6 +29,8 @@
     </div>
 @endif
 
+
+{{-- add a new task force --}}
 <form action="/project/{{ $project->id}}/tasks" method="post" class="box">
     <div>
         <label for="description">New  Task</label>
