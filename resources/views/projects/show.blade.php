@@ -17,7 +17,7 @@
             <form method="POST" action="/tasks/{{ $task->id}}">
                     @method('PATCH')
                     @csrf
-                    
+
                     <label for="completed" class="checkbox">
                         <input type="checkbox" name="completed" onchange="this.form.submit()" {{ $task->completed ? 'checked' : ''}}>
                         {{$task->description}}
@@ -28,5 +28,15 @@
         @endforeach
     </div>
 @endif
+
+<form action="" method="post">
+    <div>
+        <label for="description">New  Task</label>
+
+        <div>
+            <input type="text" class="input" name="description" placeholder="New Task">
+        </div>
+    </div>
+</form>
 
 @endsection

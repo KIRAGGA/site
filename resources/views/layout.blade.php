@@ -2,6 +2,11 @@
 <html>
     <head>
         <title>@yield('title')</title>
+        <style>
+            .is-complete{
+                text-decoration: line-through;
+            }
+        </style>
     </head>
     <body>
         
