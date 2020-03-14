@@ -40,7 +40,7 @@
         <label for="description">New Task</label>
 
         <div>
-            <input type="text" class="input" name="description" placeholder="New Task">
+            <input type="text" class="input" name="description" placeholder="New Task" required>
         </div>
     </div>
 
@@ -49,6 +49,7 @@
             <button type="submit" class="button is-link">Add Task</button>
         </div>
     </div>
+    @include('errors')
 </form>
 
 @endsection
