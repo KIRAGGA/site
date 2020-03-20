@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Project;
+use App\Providers\Twitter;
 
 use Illuminate\Http\Request;
 

@@ -1,7 +1,7 @@
 <?php
 
 
-app()->singleton('twitter', function(){
+app()->singleton('App\Providers\Twitter', function(){
 
 return new \App\Providers\Twitter('this is a twitter api');
 
