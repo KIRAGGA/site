@@ -23,8 +23,8 @@ class ProjectsController extends Controller
 
     public function show(Project $project){
         // $project = Project::findOrFail($id);
-        // $twitter = app('twitter');
-        // dd($twitter);
+        $twitter = app('twitter');
+        dd($twitter);
         
         return view('projects.show', compact('project'));
     }

@@ -3,7 +3,7 @@
 
 app()->singleton('twitter', function(){
 
-return new Twitter('this isii a twitter api');
+return new \App\Services\Twitter('this isii a twitter api');
 
 });
 
