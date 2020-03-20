@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Project;
+
 use App\Providers\Twitter;
 
 use Illuminate\Http\Request;
@@ -22,9 +23,10 @@ class ProjectsController extends Controller
     }
 
 
-    public function show(Project $project){
+    public function show(Project $project, Twitter $twitter){
         // $project = Project::findOrFail($id);
-        $twitter = app('twitter');
+        $twitter = app('App\Providers\twitter');
+
         dd($twitter);
         
         return view('projects.show', compact('project'));
