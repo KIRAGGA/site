@@ -20,7 +20,7 @@ return new \App\Providers\Twitter('this is a twitter api');
 
 
 Route::get('/', function(){
- dd(app('example'), app('example'));
+ dd(app('App\Example'));
 
  return view('welcome');
 });
