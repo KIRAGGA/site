@@ -3,7 +3,8 @@
 
 app()->bind('example', function(){
 
-    
+return new \App\Example;
+
 });
 
 /*
@@ -16,7 +17,7 @@ app()->bind('example', function(){
 | contains the "web" middleware group. Now create something great!
 |
 */
-use Illuminate\Filesystem\Filesystem;
+
 
 Route::get('/', function(){
  dd(app(Filesystem::class));
