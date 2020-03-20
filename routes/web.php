@@ -10,9 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Filesystem\Filesystem;
 
+Route::get('/', function(){
+ dd(app(Filesystem::class));
 
-Route::get('/', 'PagesController@home');
+ return view('welcome');
+});
+
+// Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
 
