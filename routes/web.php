@@ -1,9 +1,9 @@
 <?php
 
 
-app()->bind('example', function(){
+app()->singleton('twitter', function(){
 
-return new \App\Example;
+return new Twitter('this isii a twitter api');
 
 });
 
@@ -20,7 +20,7 @@ return new \App\Example;
 
 
 Route::get('/', function(){
- dd(app(Filesystem::class));
+ dd(app('example'), app('example'));
 
  return view('welcome');
 });
