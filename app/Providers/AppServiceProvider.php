@@ -13,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton(Twitter::class, function(){
+
+            return new Twitter('appi-key');
+        });
     }
 
     /**
