@@ -1,11 +1,14 @@
 <?php
 
 
-app()->singleton('App\Providers\Twitter', function ()
-{
+use App\Providers\Twitter;
 
-return new \App\Providers\Twitter('ThisIsaTwitterApi');
 
+Route::get('/', function (Twitter $twitter){
+
+    dd($twitter);
+
+    return view('welcome');
 });
 
 /*

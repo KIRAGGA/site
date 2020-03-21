@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->singleton(Twitter::class, function(){
 
-            return new Twitter('appi-key');
+            return new Twitter('api-key');
         });
     }
 
