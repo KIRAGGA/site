@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Providers;
-
+use App\Providers\Twitter;
 use Illuminate\Support\ServiceProvider;
 
 class SocialServiceProvider extends ServiceProvider
