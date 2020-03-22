@@ -1,11 +1,11 @@
 <?php
 
-use App\Repositories\UserRepository;
+use App\Providers\Twitter;
 
 
-Route::get('/', function (UserRepository $users){
+Route::get('/', function (Twitter $twitter){
 
-    dd($users);
+    dd($twitter);
 
     return view('welcome');
 });
