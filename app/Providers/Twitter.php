@@ -5,10 +5,10 @@ namespace App\Providers;
 class Twitter
 {
 
-    protected $apikey;
+    protected $apiKey;
     
-    public function _construct($apikey)
+    public function _construct($apiKey)
     {
-        $this->apikey = $apikey;
+        $this->apiKey = $apikey;
     }
 }
