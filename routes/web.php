@@ -1,6 +1,5 @@
 <?php
 
-
 use App\Providers\Twitter;
 
 
@@ -23,11 +22,11 @@ Route::get('/', function (Twitter $twitter){
 */
 
 
-Route::get('/', function(){
- dd(app('App\Example'));
+// Route::get('/', function(){
+//  dd(app('App\Example'));
 
- return view('welcome');
-});
+//  return view('welcome');
+// });
 
 // Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');

@@ -25,7 +25,7 @@ class ProjectsController extends Controller
 
     public function show(Project $project, Twitter $twitter){
         // $project = Project::findOrFail($id);
-        $twitter = app('App\Providers\twitter');
+        $twitter = app('App\Providers\Twitter');
 
         dd($twitter);
         
